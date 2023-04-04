@@ -30,12 +30,12 @@
                     <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Enter task name</label>
-                      <input type="text" name="task_name" class="form-control" id="exampleInputaskname1" aria-describedby="taskName">
+                      <input type="text" name="task_name" class="form-control" value="{{ $tasks->task_name }}" id="exampleInputaskname1" aria-describedby="taskName" />
                       <div id="taskName" class="form-text">Enter task name.</div>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputaskdescrition1" class="form-label">Description</label>
-                        <textarea name="task_description" id="task_description" cols="30"  class="form-control" id="exampleInputaskdescription1" aria-describedby="taskDescription" rows="10"></textarea>
+                        <textarea name="task_description" id="task_description" cols="30" value="{{ $tasks->task_description }}" class="form-control" id="exampleInputaskdescription1" aria-describedby="taskDescription" rows="10"></textarea>
                         <div id="taskDescription" class="form-text">Enter Task description.</div>
                     </div>
                    <div class="modal-footer">
