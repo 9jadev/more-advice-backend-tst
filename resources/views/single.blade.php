@@ -35,7 +35,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputaskdescrition1" class="form-label">Description</label>
-                        <textarea name="task_description" id="task_description" cols="30" value="{{ $tasks->task_description }}" class="form-control" id="exampleInputaskdescription1" aria-describedby="taskDescription" rows="10"></textarea>
+                        <textarea name="task_description" id="task_description" cols="30" class="form-control" id="exampleInputaskdescription1" aria-describedby="taskDescription" rows="10">{{ $tasks->task_description }}</textarea>
                         <div id="taskDescription" class="form-text">Enter Task description.</div>
                     </div>
                    <div class="modal-footer">
